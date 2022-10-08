@@ -1,7 +1,7 @@
 ---
 [meta]
-title = "First steps with AWS Batch"
-date = 2020-12-20
+title = "Download s3 files into memory"
+date = 2022-10-07
 tags = ["cloud", "aws", "boto3"]
 description = "Learn a few tricks and quirks before starting using AWS Batch to offload your long-running tasks."
 ---
