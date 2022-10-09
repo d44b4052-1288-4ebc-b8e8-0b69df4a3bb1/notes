@@ -12,7 +12,7 @@ that perform k-mer analysis we often take it in the context of all possible
 subsequences of length K, it’s one of those things that is easily grasped by a 
 ugly hand draw:
 
-![](diagram1.png)
+![](https://raw.githubusercontent.com/d44b4052-1288-4ebc-b8e8-0b69df4a3bb1/notes/main/notes/2021/diagram1.png)
 
 Here is a simple implementation of a k-mer count function in python, this require
 a lot of memory to run and can not be used in real life with NGS data (unless you 
@@ -162,7 +162,7 @@ def plot_coverage_chart(dataset, min_coverage=0, max_coverage=1000):
 
 plot_coverage_chart(dataset=dataset)
 ```
-![](01.jpg)
+![](https://raw.githubusercontent.com/d44b4052-1288-4ebc-b8e8-0b69df4a3bb1/notes/main/notes/2021/01.jpg)
 
 The first chart is not very easy to read, the first values for coverage
 have a very high frequency value, and is dominating the visualization,
@@ -175,7 +175,7 @@ start considering coverage at 7:
 plot_coverage_chart(dataset=dataset, min_coverage=7)
 ```
 
-![](02.jpg)
+![](https://raw.githubusercontent.com/d44b4052-1288-4ebc-b8e8-0b69df4a3bb1/notes/main/notes/2021/02.jpg)
 This plot is a lot easier for a human to read, and the genome size also lowered 
 to 82 Gbp, we can brake it down in three to better understand what is happening:
 
@@ -194,7 +194,7 @@ green portion of the plot:
 plot_coverage_chart(dataset=dataset, min_coverage=55, max_coverage=250)
 ```
 
-![](03.jpg)
+![](https://raw.githubusercontent.com/d44b4052-1288-4ebc-b8e8-0b69df4a3bb1/notes/main/notes/2021/03.jpg)
 
 This time we get something that looks like a Poisson distribution, and our genome 
 estimation get a lot closer to the expected value of 4.12 Mbp.
